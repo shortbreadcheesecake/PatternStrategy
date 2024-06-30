@@ -18,6 +18,12 @@ public:
         cout << "Кошка съела рыбу и молоко" << endl;
     }
 };
+class Cow : public Animal {
+public:
+    void eat() override {
+        cout << "Корова съела траву и воду" << endl;
+    }
+};
 class FoodDispenser {
 public:
     void feed(Animal* animal) {
